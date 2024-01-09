@@ -26,13 +26,15 @@ function checkString (text){
 
 //Recupero degli elementi
 
-const buttonElement = document.getElementById('button');
+const form = document.querySelector('form');
 const resultElement = document.getElementById('paragraph')
 const inputField = document.getElementById('input')
 
 // Aggiungo reazione al click
 
-buttonElement.addEventListener('click', function(){
+form.addEventListener('submit', function (e) {
+
+    e.preventDefault();
 
     const text = inputField.value.trim()
 
