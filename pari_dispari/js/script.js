@@ -15,4 +15,11 @@ const userNumber = parseInt(prompt('Scegli un numero da 1 a 5'))
 console.log(userNumber)
 
 
+const randomNumber = parseInt(getRandomNumber())
+console.log(randomNumber)
 
+let sum = userNumber + randomNumber
+console.log(sum)
+
+const result = isEven(sum)
+console.log(result)
