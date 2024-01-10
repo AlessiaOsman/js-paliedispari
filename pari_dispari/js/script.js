@@ -23,3 +23,13 @@ console.log(sum)
 
 const result = isEven(sum)
 console.log(result)
+
+let message = ''
+
+if (result === true && userChoice === 'pari' || result === false && userChoice === 'dispari'){
+    message += 'Hai vinto'
+} else {
+    message += 'Ha vinto il computer'
+}
+
+console.log(message)
